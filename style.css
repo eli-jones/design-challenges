@@ -1,0 +1,132 @@
+* {
+    
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.75em;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.75em;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    padding: 0.75em 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    border: 0;
+    box-shadow: 0;
+}
+
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.attribution a {
+    padding: 0;
+    display: inline;
+}
+
+img {
+    margin-top: 1em;
+    width: 50px;
+    height: auto;
+}
+
+div {
+    padding: 2em;
+}
+
+#sed {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#sed a {
+    color: hsl(31, 77%, 52%);
+}
+
+#sed a:active {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suv a {
+    color: hsl(184, 100%, 22%);
+}
+
+#suv a:active {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+#lux {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#lux a {
+    color: hsl(179, 100%, 13%);
+}
+
+#lux a:active {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 630px) {
+    a {
+        margin: 1em 0em 1em 0em;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #sed {
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+    #lux {
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+}
+
+@media screen and (min-width: 631px) {
+    a {
+        margin: 4em 0em 1em 0em;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+    #sed {
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+    #lux {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+}
