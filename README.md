@@ -32,7 +32,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/eli-jones/design-challenges)
 - Live Site URL: [Live](https://eli-jones.github.io/design-challenges/)
 
 ## My process
