@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+head {
+    display: none;
+}
+
+@font-face {
+    font-family: DMsans;
+    src: url(assets/fonts/DMSans-VariableFont_opsz,wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: DMsansI;
+    src: url(assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf) format('truetype');
+}
+
+h1, h2, p {
+    font-family: DMsans, arial, 'sans serif';
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 46px;
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.cont {
+    padding: 2rem 0;
+    margin: 0.75rem;
+    width: 85vw;
+    max-width: 23rem;
+    border-radius: 0.75rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro, .grow {
+    text-align: center;
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
+}
+
+.manage, .stats {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.calendar, .ai {
+    background-color: hsl(39, 100%, 71%);
+}
+
+.schedule {
+    background-color: hsl(254, 88%, 90%);
+}
+
+.create {
+    background-color: hsl(31, 66%, 93%);
+}
+
+.intro img {
+    width: 12rem;
+    margin: 1rem 0;
+}
+
+.intro h1, .intro p {
+    width: 16rem;
+}
+
+.manage img {
+    width: 20rem;
+}
+
+.manage p {
+    width: 20rem;
+    line-height: 28px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.calendar img {
+    width: 16rem;
+    justify-self: left;
+    margin: 1rem 0 -2rem 2rem;
+}
+
+.calendar p {
+    width: 20rem;
+    line-height: 28px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.schedule img {
+    width: 20rem;
+    margin: 1rem 0;
+}
+
+.schedule h2 {
+    letter-spacing: -1px;
+    line-height: 28px;
+    font-size: 28px;
+}
+
+.schedule p {
+    text-align: center;
+    width: 18rem;
+}
+
+.grow img {
+    width: 16rem;
+    margin-bottom: 1rem;
+}
+
+.grow p {
+    width: 16rem;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.stats img {
+    width: 12rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.stats p {
+    margin-left: 2rem;
+}
+
+.stats {
+    justify-content: left;
+}
+
+.create img {
+    width: 12rem;
+    margin-top: 1rem;
+}
+
+.create p {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 21rem;
+}
+
+.ai img {
+    width: 16rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.ai p {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 21rem;
+    margin-left: 2rem;
+}
+
+.ai {
+    justify-items: left;
+}
+
+.yellow {
+    color: hsl(39, 100%, 71%);
+}
+
+.it {
+    font-family: DMsansI, arial, 'sans-serif';
+}
+
+.heavy {
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+}
+
+.purple {
+    color: hsl(256, 67%, 59%);
+    font-family: DMsansI, arial, 'sans-serif';
+}
+
+.attribution {
+    margin: 2rem;
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .intro {grid-area: intro;}
+    .manage {grid-area: manage;}
+    .calendar {grid-area: calendar;}
+    .schedule {grid-area: schedule;}
+    .grow {grid-area: grow;}
+    .stats {grid-area: stats;}
+    .create {grid-area: create;}
+    .ai {grid-area: ai;}
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'create intro intro schedule'
+            'create intro intro schedule'
+            'create intro intro schedule'
+            'create manage calendar schedule'
+            'ai manage calendar schedule'
+            'ai manage calendar schedule'
+            'ai stats grow grow'
+            'ai stats grow grow'
+            'ai stats grow grow';
+        gap: 0;
+    }
+    
+    .cont {
+        max-width: 20rem;
+        padding: 2rem 1rem;
+    }
+    
+    .intro, .manage, .calendar, .stats, .grow {
+        max-height: 20rem;
+    }
+    
+    img {
+        margin: 0;
+    }
+    
+    .intro, .grow {
+        max-width: 41.5rem;
+    }
+    
+    .intro h1, .intro p {
+        width: 30rem;
+    }
+    
+    .intro h1 {
+        font-size: 58px;
+        line-height: 52px;
+    }
+    
+    .manage {
+        justify-items: left;
+    }
+    
+    .manage img {
+        width: 24rem;
+        margin-left: 1rem;
+    }
+    
+    .manage p {
+        width: 12rem;
+        margin-left: 1rem;
+    }
+    
+    .calendar {
+        justify-items: left;
+    }
+    
+    .calendar img {
+        margin-left: 1rem;
+    }
+    
+    .calendar p {
+        width: 12rem;
+        margin-left: 1rem;
+    }
+    
+    .schedule {
+        justify-items: left;
+    }
+    
+    .schedule img {
+        width: 25rem;
+        margin-left: 1rem;
+    }
+    
+    .schedule h2 {
+        width: 12rem;
+        margin-left: 1rem;
+    }
+    
+    .schedule p {
+        text-align: left;
+        width: 12rem;
+        margin-left: 1rem;
+    }
+    
+    .grow {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .grow img {
+        width: 16rem;
+        margin-left: 2rem;
+    }
+    
+    .grow p {
+        text-align: left;
+        margin-left: 2rem;
+        font-size: 42px;
+        width: 20rem;
+    }
+    
+    .stats p, .stats img {
+        margin: 0 0 0 1rem;
+    }
+    
+    .heavy {
+        font-size: 66px;
+    }
+    
+    .create img {
+        width: 15rem;
+        margin: 0;
+    }
+    
+    .create p {
+        width: 15rem;
+    }
+    
+    .ai {
+        justify-items: left;
+    }
+    
+    .ai img {
+        margin-left: 1rem;
+    }
+    
+    .ai p {
+        width: 12rem;
+        margin-left: 1rem;
+    }
+    
+}
